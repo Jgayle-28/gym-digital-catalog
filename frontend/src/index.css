@@ -1,0 +1,148 @@
+main {
+  min-height: 80vh;
+}
+.main-nav {
+  background-color: #000 !important ;
+}
+.text-sm {
+  font-size: 0.7rem;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+/* Home Hero */
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.7) 75%,
+      #000 100%
+    ),
+    url('/public/images/landing/hero.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.masthead h1,
+.masthead .h1 {
+  font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)); */
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.masthead h2,
+.masthead .h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2,
+  .masthead .h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+/* Getting started */
+.about-section {
+  padding-top: 10rem;
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+/* product */
+.product-section {
+  padding-top: 5rem;
+}
+.product-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid #ca1112;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+.product-section .card:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.product-section .card h4,
+.product-section .card .h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+.product-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+/* info */
+.info-section {
+  margin-top: 6rem;
+  padding: 10rem 0;
+  border: none !important;
+}
+.info-section .featured-text {
+  padding: 2rem;
+}
+@media (min-width: 992px) {
+  .info-section .featured-text-right {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #ca1112;
+  }
+  .info-section .featured-text-left {
+    padding: 0 2rem 0 0;
+    border-right: 0.5rem solid #ca1112;
+  }
+}
+.info-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+@media (min-width: 992px) {
+  .info-section .project-text {
+    padding: 5rem;
+  }
+  .info-section .project-text hr {
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 30%;
+  }
+}
